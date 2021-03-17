@@ -4,11 +4,33 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour {
 
-    [SerializeField] GameObject defender;
+    [SerializeField] Defender defender;
 
     private void OnMouseDown()
     {
-        SpawnDefender(GetSquareClicked());
+        AttemtToPlaceDefenderAt(GetSquareClicked());
+    }
+
+    public void SelectNewDefender(Defender selectedDefender)
+    {
+        defender = selectedDefender;
+    }
+
+    private void AttemtToPlaceDefenderAt(Vector2 gridPos)
+    {
+        if (!defender)
+        {
+            return;
+        }
+        
+        var manaDisplay = FindObjectOfType<ManaDisplay>();
+        int defenderCost = defender.GetManaCost();
+
+        if (manaDisplay.HaveEnoughMana(defenderCost))
+        {
+            manaDisplay.SpendMana(defenderCost);
+            SpawnDefender(gridPos);
+        }
     }
 
     private Vector2 GetSquareClicked()
@@ -29,7 +51,7 @@ public class DefenderSpawner : MonoBehaviour {
 
     private void SpawnDefender(Vector2 worldPos)
     {
-        GameObject newDefender = Instantiate(defender, worldPos, Quaternion.identity);
+        Defender newDefender = Instantiate(defender, worldPos, Quaternion.identity) as Defender;
     }
 
 }

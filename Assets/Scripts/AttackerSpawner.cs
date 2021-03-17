@@ -38,6 +38,6 @@ public class AttackerSpawner : MonoBehaviour
 
     void SpawnAttacker()
     {
-        Instantiate(attackerPrefab, transform.position, transform.rotation);
+        Attacker newAttacker = Instantiate(attackerPrefab, transform.position, transform.rotation, transform);
     }
 }
