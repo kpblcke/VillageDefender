@@ -10,20 +10,13 @@ public class AttackerSpawner : MonoBehaviour
     private float maxSpawnDelay = 5f;
 
     [SerializeField]
-    private Attacker attackerPrefab;
-    
+    private Attacker[] attackers;
     private bool spawn = true;
     
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(StartSpawning());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     IEnumerator StartSpawning()
@@ -36,8 +29,14 @@ public class AttackerSpawner : MonoBehaviour
         }
     }
 
+    public void StopSpawn()
+    {
+        spawn = false;
+    }
+
     void SpawnAttacker()
     {
+        Attacker attackerPrefab = attackers[Random.Range(0, attackers.Length)];
         Attacker newAttacker = Instantiate(attackerPrefab, transform.position, transform.rotation, transform);
     }
 }

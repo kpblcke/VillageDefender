@@ -60,14 +60,25 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attacker.cs" />
      <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
+     <Compile Include="Assets\Scripts\DamageCollider.cs" />
      <Compile Include="Assets\Scripts\Defender.cs" />
      <Compile Include="Assets\Scripts\DefenderButton.cs" />
      <Compile Include="Assets\Scripts\DefenderSpawner.cs" />
+     <Compile Include="Assets\Scripts\GameTimer.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\LevelController.cs" />
      <Compile Include="Assets\Scripts\LevelLoader.cs" />
+     <Compile Include="Assets\Scripts\LivesDisplay.cs" />
      <Compile Include="Assets\Scripts\ManaDisplay.cs" />
+     <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\OptionsController.cs" />
+     <Compile Include="Assets\Scripts\PlayerPrefsController.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Shield.cs" />
      <Compile Include="Assets\Scripts\Shooter.cs" />
+     <Compile Include="Assets\Scripts\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Skelet.cs" />
+     <Compile Include="Assets\Scripts\Slime.cs" />
      <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs" />
      <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\Demo\DestroyEvent_HeroKnight.cs" />
      <Compile Include="Assets\Sprites\Hero Knight - Pixel Art\Demo\HeroKnight.cs" />

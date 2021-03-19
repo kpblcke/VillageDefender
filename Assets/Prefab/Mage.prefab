@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8480810442689034741}
   - component: {fileID: 6247718630534164260}
   - component: {fileID: 3672115021853550059}
+  - component: {fileID: -3780306977100197900}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Untagged
@@ -63,6 +64,7 @@ MonoBehaviour:
   projectile: {fileID: 5512667694469183890, guid: dc58c9319fa9f0744a1e40b616819911,
     type: 3}
   gun: {fileID: 5123605359793535653}
+  shootCooldown: 1
 --- !u!95 &6247718630534164260
 Animator:
   serializedVersion: 3
@@ -108,6 +110,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.05, y: 1.05}
   m_EdgeRadius: 0
+--- !u!114 &-3780306977100197900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424956852719124030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caee38f750eac1a44a70ed7c80fa6001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 75
+  deathVFX: {fileID: 0}
 --- !u!1 &1726577968318496266
 GameObject:
   m_ObjectHideFlags: 0
