@@ -64,7 +64,7 @@ MonoBehaviour:
   projectile: {fileID: 5512667694469183890, guid: dc58c9319fa9f0744a1e40b616819911,
     type: 3}
   gun: {fileID: 5123605359793535653}
-  shootCooldown: 1
+  shootCooldown: 1.5
 --- !u!95 &6247718630534164260
 Animator:
   serializedVersion: 3
@@ -194,7 +194,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 4723107735738678597, guid: 30442e08e62192f4c86e2cefe6864a3b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

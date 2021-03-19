@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour {
     [SerializeField] float speed = 1f;
     [SerializeField] float damage = 50;
 
+    [SerializeField] private GameObject deathVfx; 
+
     void Update ()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -21,6 +23,10 @@ public class Projectile : MonoBehaviour {
         if (attacker && health)
         {
             health.DealDamage(damage);
+            if (deathVfx)
+            {
+                Instantiate(deathVfx, transform.position, transform.rotation, transform.parent);
+            }
             Destroy(gameObject);
         }
     }

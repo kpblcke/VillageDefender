@@ -38,6 +38,7 @@ public class Attacker : MonoBehaviour
     public void Attack(GameObject target)
     {
         GetComponent<Animator>().SetBool("isAttacking", true);
+        walkSpeed = 0;
         currentTarget = target;
     }
     
