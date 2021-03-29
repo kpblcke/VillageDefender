@@ -60,6 +60,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Attacker.cs" />
      <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
+     <Compile Include="Assets\Scripts\ComboController.cs" />
+     <Compile Include="Assets\Scripts\ComboShow.cs" />
      <Compile Include="Assets\Scripts\DamageCollider.cs" />
      <Compile Include="Assets\Scripts\Defender.cs" />
      <Compile Include="Assets\Scripts\DefenderButton.cs" />
@@ -70,6 +72,8 @@
      <Compile Include="Assets\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\Scripts\LiveTime.cs" />
      <Compile Include="Assets\Scripts\LivesDisplay.cs" />
+     <Compile Include="Assets\Scripts\Magic\Spell.cs" />
+     <Compile Include="Assets\Scripts\Magic\Word.cs" />
      <Compile Include="Assets\Scripts\ManaDisplay.cs" />
      <Compile Include="Assets\Scripts\Movable.cs" />
      <Compile Include="Assets\Scripts\MusicPlayer.cs" />

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefenderSpawner : MonoBehaviour {
+public class DefenderSpawner : Singleton<DefenderSpawner> {
 
     [SerializeField] Defender defender;
     GameObject defenderParent;
@@ -23,7 +23,7 @@ public class DefenderSpawner : MonoBehaviour {
         }
     }
 
-    private void OnMouseDown()
+    public void Cast()
     {
         AttemtToPlaceDefenderAt(GetSquareClicked());
     }
